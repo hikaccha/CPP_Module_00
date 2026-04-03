@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+         #
+#    By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/30 19:57:49 by ichikawahik       #+#    #+#              #
-#    Updated: 2026/02/12 15:53:40 by ichikawahik      ###   ########.fr        #
+#    Updated: 2026/04/03 15:59:22 by hichikaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = phonebook
 SRCS = phonebook.cpp
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 
 RM = rm -f
 

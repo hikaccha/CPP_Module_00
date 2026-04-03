@@ -1,21 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   phonebook.hpp                                      :+:      :+:    :+:   */
+/*   command.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/28 21:09:25 by ichikawahik       #+#    #+#             */
-/*   Updated: 2026/04/03 16:47:18 by hichikaw         ###   ########.fr       */
+/*   Created: 2026/04/03 16:49:21 by hichikaw          #+#    #+#             */
+/*   Updated: 2026/04/03 16:49:22 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cstring>
-#include <iostream>
-
-#ifndef CPP_MODULE_00_PHONEBOOK_HPP_
-# define CPP_MODULE_00_PHONEBOOK_HPP_
-
-
-
-#endif // CPP_MODULE_00_PHONEBOOK_HPP_

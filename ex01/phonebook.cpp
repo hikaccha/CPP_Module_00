@@ -3,11 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+        */
+/*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 21:05:14 by ichikawahik       #+#    #+#             */
-/*   Updated: 2026/02/28 21:06:21 by ichikawahik      ###   ########.fr       */
+/*   Updated: 2026/04/03 14:47:48 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
+
+int main()
+{
+	Phonebook phonebook;
+	std::string command;
+
+	
+}
