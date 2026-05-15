@@ -6,16 +6,38 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 21:09:25 by ichikawahik       #+#    #+#             */
-/*   Updated: 2026/04/03 16:47:18 by hichikaw         ###   ########.fr       */
+/*   Updated: 2026/05/15 22:30:35 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cstring>
-#include <iostream>
 
-#ifndef CPP_MODULE_00_PHONEBOOK_HPP_
-# define CPP_MODULE_00_PHONEBOOK_HPP_
+#ifndef PHONEBOOK_H
+# define PHONEBOOK_H
 
+#include <string>
+#include "contact.hpp"
 
+class PhoneBook {
+	private:
+		int 	_index;
+		bool	_abort;
+		Contact _contactList[8];
 
-#endif // CPP_MODULE_00_PHONEBOOK_HPP_
+		std::string _getInput(std::string const prompt);
+		void		_incrementIndex(void);
+		bool		_displayContactByIndex(std::string const input) const;
+		void		_displayContactTable(void) const;
+		void		_printContactInfoTable(int const index) const;
+		void		_printTableString(std::string str) const;
+
+	public:
+		PhoneBook(void);
+		~PhoneBook(void);
+
+		std::string trimBlank(std::string str);
+		bool		addContact(void);
+		void		displayContact(int index) const;
+		bool		searchContact(void);
+};
+
+#endif
