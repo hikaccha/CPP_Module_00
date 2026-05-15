@@ -12,10 +12,4 @@
 
 #include "phonebook.hpp"
 
-int main()
-{
-	Phonebook phonebook;
-	std::string command;
 
-	
-}
