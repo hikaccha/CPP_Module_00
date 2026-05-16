@@ -6,7 +6,7 @@
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 21:31:40 by hichikaw          #+#    #+#             */
-/*   Updated: 2026/05/16 14:13:56 by hichikaw         ###   ########.fr       */
+/*   Updated: 2026/05/16 18:00:45 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,11 @@ void	Contact::set_lastname(std::string str)
 }
 
 void	Contact::set_nickname(std::string str)
+{
+	this->_nickname = str;
+}
+
+void	Contact::set_phone_num(std::string str)
 {
 	this->_phone_num = str;
 }
