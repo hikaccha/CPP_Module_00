@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ichikawahikaru <ichikawahikaru@student.    +#+  +:+       +#+         #
+#    By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/30 19:57:13 by ichikawahik       #+#    #+#              #
-#    Updated: 2026/02/12 15:19:30 by ichikawahik      ###   ########.fr        #
+#    Updated: 2026/05/16 18:23:25 by hichikaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = megaphone
 SRCS = megaphone.cpp
 
 CC = clang++
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic-errors
 
 RM = rm -f
 
@@ -28,7 +28,6 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	@$(CC) $(CFLAGS) $^ -o $(NAME)
-	@echo '$(NAME) compiled!'
 
 fclean : clean
 	@$(RM) $(NAME)
