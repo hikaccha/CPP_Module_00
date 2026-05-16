@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   phonebook_utils.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hichikaw <hichikaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/03 16:49:14 by hichikaw          #+#    #+#             */
-/*   Updated: 2026/05/16 13:32:34 by hichikaw         ###   ########.fr       */
+/*   Created: 2026/05/16 13:21:44 by hichikaw          #+#    #+#             */
+/*   Updated: 2026/05/16 13:24:42 by hichikaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
+#ifndef PHONEBOOK_UTILS_HPP
+# define PHONEBOOK_UTILS_HPP
 
-int main(void)
-{
-	Phonebook	ph1;
-	std::string	str;
+#include <iostream>
+#include "contact.hpp"
 
-	while (str != "EXIT")
-	{
-		std::cout << "Enter a command > ";
-		std::getline(std::cin, str);
-		if (str == "ADD")
-			ph1.add();
-		else if (str == "SEARCH")
-			ph1.search();
-		if (std::cin.eof())
-		{
-			std::cout << std::endl;
-			return (0);
-		}
-	}
-	return (0);
-}
+std::string	add_spaces(int n);
+
+std::string fix_width(std::string str, long unsigned max);
+
+int			search_ui(Contact contacts[8]);
+
+#endif
